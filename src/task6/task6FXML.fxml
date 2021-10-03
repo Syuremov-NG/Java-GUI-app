@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+
+<AnchorPane prefHeight="540.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="task6.task6Controller">
+   <children>
+      <ColorPicker fx:id="O_colorPicker" layoutX="14.0" layoutY="434.0" prefHeight="26.0" prefWidth="106.0" />
+      <ColorPicker fx:id="C_colorPicker" layoutX="152.0" layoutY="434.0" prefHeight="26.0" prefWidth="106.0" />
+      <ColorPicker fx:id="H_colorPicker" layoutX="293.0" layoutY="434.0" prefHeight="26.0" prefWidth="106.0" />
+      <ColorPicker fx:id="S_colorPicker" layoutX="436.0" layoutY="434.0" prefHeight="26.0" prefWidth="106.0" />
+      <Label layoutX="27.0" layoutY="411.0" text="Кислород (О)" />
+      <Label layoutX="174.0" layoutY="410.0" prefHeight="18.0" prefWidth="74.0" text="Углерод(С)" />
+      <Label layoutX="314.0" layoutY="411.0" text="Водород(Н)" />
+      <Label layoutX="469.0" layoutY="411.0" text="Сера(S)" />
+      <Button fx:id="saveBtn" layoutX="461.0" layoutY="502.0" mnemonicParsing="false" onAction="#save" text="Сохранить" />
+      <SubScene fx:id="subScene" depthBuffer="true" height="408.0" layoutX="1.0" width="550.0">
+        <root>
+          <Region />
+        </root>
+      </SubScene>
+      <Button fx:id="openBtn" layoutX="14.0" layoutY="501.0" mnemonicParsing="false" onAction="#open" prefHeight="26.0" prefWidth="74.0" text="Открыть" />
+      <Button fx:id="showBtn" layoutX="101.0" layoutY="501.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="74.0" text="Показать" />
+   </children>
+</AnchorPane>

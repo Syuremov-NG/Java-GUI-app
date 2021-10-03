@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="task4.task4Controller">
+   <children>
+      <LineChart fx:id="lineCharts" alternativeColumnFillVisible="true" layoutX="11.0" layoutY="14.0" prefHeight="423.0" prefWidth="500.0" title="Line Charts">
+        <xAxis>
+          <NumberAxis label="Argument" prefHeight="40.0" prefWidth="422.0" tickLength="5.0" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Function" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="228.0" layoutY="471.0" text="Width" />
+      <TextField fx:id="minField" layoutX="391.0" layoutY="453.0" prefHeight="26.0" prefWidth="62.0" text="-5" />
+      <Label layoutX="359.0" layoutY="458.0" text="min" />
+      <Label layoutX="358.0" layoutY="484.0" text="max" />
+      <TextField fx:id="widthField" layoutX="272.0" layoutY="466.0" prefHeight="26.0" prefWidth="62.0" text="2" />
+      <TextField fx:id="maxField" layoutX="391.0" layoutY="479.0" prefHeight="26.0" prefWidth="62.0" text="5" />
+      <RadioButton fx:id="showRadio" layoutX="475.0" layoutY="457.0" mnemonicParsing="false" text="show">
+         <toggleGroup>
+            <ToggleGroup fx:id="visible" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="hideRadio" layoutX="475.0" layoutY="484.0" mnemonicParsing="false" text="hide" toggleGroup="$visible" />
+      <ComboBox fx:id="funcBox" layoutX="47.0" layoutY="467.0" prefWidth="150.0" promptText="Функция" />
+   </children>
+</AnchorPane>
